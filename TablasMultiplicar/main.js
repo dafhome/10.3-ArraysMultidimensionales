@@ -17,11 +17,10 @@ function tablasMultiplicar(){
     document.getElementById("tablas").innerHTML = "";
     for (menor; menor<mayor+1; menor++){
         document.getElementById("tablas").innerHTML += "Tabla del "+menor+": ";
-        
+
         // for (let i=0; i<=10; i++){
         //     document.getElementById("tablas").innerHTML += i*menor+" ";
         // }
-
         numeros.forEach(function(numero) {
             document.getElementById("tablas").innerHTML += numero*menor+" ";
         });
