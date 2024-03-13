@@ -14,13 +14,16 @@ let resultado26 = medidas[2][2][1];
 let resultado134 = medidas[0][1];
 let resultado92 = medidas[2][3];
 
-document.getElementById("resultado1").innerHTML += resultado92+", "+resultado134+", "+resultado92;
+document.getElementById("resultado1").innerHTML += resultado92 + ", " + resultado134 + ", " + resultado92;
 
 
 let rosa = nombres[2][1];
 let roberto = nombres[1][2];
 
-document.getElementById("resultado2").innerHTML += rosa+", "+roberto;
+document.getElementById("resultado2").innerHTML += rosa + ", " + roberto;
 
 let mascotas = nombres[0];
-let personas = nombres[1];
+let personas = [nombres[1], nombres[2]];
+
+document.getElementById("resultado3").innerHTML += "Mascotas: " + mascotas + "<br>";
+document.getElementById("resultado3").innerHTML += "Personas: " + personas;
