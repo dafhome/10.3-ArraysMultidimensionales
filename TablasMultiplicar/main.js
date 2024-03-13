@@ -8,7 +8,7 @@
 let menor;
 let mayor;
 
-const numeros = [1,2,3,4,5,6,7,8,9,10];
+const numeros = [0,1,2,3,4,5,6,7,8,9,10];
 
 // function tablas 
 function tablasMultiplicar(){
@@ -17,9 +17,15 @@ function tablasMultiplicar(){
     document.getElementById("tablas").innerHTML = "";
     for (menor; menor<mayor+1; menor++){
         document.getElementById("tablas").innerHTML += "Tabla del "+menor+": ";
-        for (let i=0; i<10; i++){
-            document.getElementById("tablas").innerHTML += i*menor+" ";
-        }
+        
+        // for (let i=0; i<=10; i++){
+        //     document.getElementById("tablas").innerHTML += i*menor+" ";
+        // }
+
+        numeros.forEach(function(numero) {
+            document.getElementById("tablas").innerHTML += numero*menor+" ";
+        });
+
         document.getElementById("tablas").innerHTML += "<br>";
     }
 }
